@@ -24,4 +24,10 @@ public class Customer {
 	private String lastName;
 
 	protected Customer() {}
+
+	public Customer(String firstName, String lastName) {
+		super();
+		this.firstName = firstName;
+		this.lastName = lastName;
+	}
 }

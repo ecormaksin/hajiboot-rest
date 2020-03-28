@@ -9,13 +9,12 @@ import org.springframework.stereotype.Service;
 import com.example.domain.customer.Customer;
 import com.example.domain.customer.CustomerRepository;
 
-@Service
-public class CustomerService {
-	CustomerRepository customerRepository;
+import lombok.RequiredArgsConstructor;
 
-	CustomerService(CustomerRepository customerRepository) {
-		this.customerRepository = customerRepository;
-	}
+@Service
+@RequiredArgsConstructor
+public class CustomerService {
+	private final CustomerRepository customerRepository;
 
 	public List<Customer> findAll() {
 		return customerRepository.findAll();

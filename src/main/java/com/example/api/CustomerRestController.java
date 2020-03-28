@@ -22,14 +22,13 @@ import org.springframework.web.util.UriComponentsBuilder;
 import com.example.application.CustomerService;
 import com.example.domain.customer.Customer;
 
+import lombok.RequiredArgsConstructor;
+
 @RestController
 @RequestMapping("api/customers")
+@RequiredArgsConstructor
 public class CustomerRestController {
-	CustomerService customerService;
-	
-	CustomerRestController(CustomerService aCustomerService) {
-		this.customerService = aCustomerService;
-	}
+	private final CustomerService customerService;
 	
 	// 顧客全件取得
 	@GetMapping
