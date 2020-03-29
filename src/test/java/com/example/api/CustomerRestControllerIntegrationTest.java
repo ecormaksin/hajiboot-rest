@@ -1,13 +1,10 @@
 package com.example.api;
 
-import static org.junit.jupiter.api.Assertions.*;
-
 import java.util.List;
 
 import java.util.Arrays;
 import java.util.Collections;
 
-import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
